@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fluff & Go Chicago | Mobile Dog Grooming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9fafb; color:#333; }
+    header { background:#0f766e; color:white; padding:30px; text-align:center; }
+    section { padding:40px 20px; max-width:900px; margin:auto; }
+    h2 { color:#0f766e; }
+    .services li { margin:8px 0; }
+    .button {
+      background:#0f766e; color:white; padding:15px 25px;
+      display:inline-block; text-decoration:none; border-radius:8px;
+      font-weight:bold;
+    }
+    footer { background:#111827; color:#ccc; text-align:center; padding:20px; }
+    input, select, textarea {
+      width:100%; padding:12px; margin:8px 0; border-radius:6px; border:1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🐶 Fluff & Go Chicago</h1>
+  <p>Professional Mobile Dog Grooming — We Come To You</p>
+  <a class="button" href="#book">Book Appointment</a>
+</header>
+
+<section>
+  <h2>Services & Pricing</h2>
+  <ul class="services">
+    <li>Bath & Blow Dry</li>
+    <li>Haircut & Styling</li>
+    <li>Nail Trimming</li>
+    <li>Ear Cleaning</li>
+    <li>Flea & Tick Treatment</li>
+    <li><strong>Small Dogs:</strong> up to 25 lbs</li>
+    <li><strong>Medium Dogs:</strong> 26–60 lbs</li>
+    <li><strong>Large Dogs:</strong> 61+ lbs</li>
+  </ul>
+</section>
+
+<section id="book">
+  <h2>Book an Appointment</h2>
+  <p><strong>$25 deposit required for NEW customers only</strong></p>
+
+  <form>
+    <input placeholder="Owner Name" required>
+    <input placeholder="Phone Number" required>
+    <input placeholder="Email" required>
+    <input placeholder="Dog Name & Breed" required>
+    <select required>
+      <option value="">Dog Size</option>
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
+    <input type="date" required>
+    <input type="time" required>
+    <textarea placeholder="Notes"></textarea>
+    <button class="button" type="submit">Request Appointment</button>
+  </form>
+</section>
+
+<footer>
+  <p>📞 Call or Text: (773) 701-7595</p>
+  <p>© FluffAndGoChicago.com</p>
+</footer>
+
+</body>
+</html>
