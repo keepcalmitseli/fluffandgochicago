@@ -741,4 +741,16 @@ footer p {
 
 #service-area .card p:last-child {
     margin-bottom: 0;
+}/* Hero Logo */
+.hero-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.hero-logo img {
+    width: min(280px, 75vw);
+    height: auto;
+    display: block;
+    border-radius: 50%;
 }
