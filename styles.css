@@ -797,4 +797,95 @@ footer p {
     .home-showcase-grid img {
         height: 380px;
     }
+}/* Why Choose Fluff & Go */
+.why-choose {
+    padding: 70px 7%;
+    background: #050505;
+    text-align: center;
+}
+
+.why-choose .section-heading {
+    max-width: 800px;
+    margin: 0 auto 45px;
+}
+
+.why-choose .eyebrow {
+    color: #D4AF37;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.why-choose h2 {
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 18px;
+}
+
+.why-choose .section-heading > p:last-child {
+    color: #bdbdbd;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-card {
+    background: linear-gradient(145deg, #111111, #080808);
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    border-radius: 16px;
+    padding: 32px 22px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.75);
+}
+
+.why-icon {
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+.why-card h3 {
+    color: #D4AF37;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: #c8c8c8;
+    line-height: 1.6;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .why-choose-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose {
+        padding: 55px 6%;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        max-width: 430px;
+    }
+
+    .why-card {
+        padding: 28px 22px;
+    }
 }
