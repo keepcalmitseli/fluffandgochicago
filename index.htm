@@ -585,31 +585,65 @@
 
 <section id="book">
 
-    <h2>Book an Appointment</h2>
+    <div class="section-heading booking-heading">
+
+        <p class="eyebrow">BOOK YOUR DOG'S GROOMING</p>
+
+        <h2>Request an Appointment</h2>
+
+        <p>
+            Tell us about your dog and the grooming service you're looking for.
+            We'll review your request and contact you to confirm availability,
+            pricing, and appointment details.
+        </p>
+
+    </div>
+
 
     <div class="booking-box">
 
-        <p
-            style="
-            color:#D4AF37;
-            font-weight:700;
-            "
-        >
-            $25 deposit required for NEW customers only.
-        </p>
+        <div class="deposit-notice">
 
-        <p>
-            Submit your information below to request an appointment.
-            Appointment availability and final pricing will be confirmed
-            after your request is reviewed.
-        </p>
+            <div class="deposit-icon">💰</div>
+
+            <div>
+                <h3>$25 New Customer Deposit</h3>
+
+                <p>
+                    A $25 deposit is required for new customers.
+                    Your appointment is not confirmed until your request
+                    has been reviewed and confirmed.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="booking-info">
+
+            <div>
+                <strong>📅 Request</strong>
+                <span>Choose your preferred date and service.</span>
+            </div>
+
+            <div>
+                <strong>📞 Confirm</strong>
+                <span>We'll contact you after reviewing your request.</span>
+            </div>
+
+            <div>
+                <strong>🐶 Groom</strong>
+                <span>Your dog's grooming is customized to their needs.</span>
+            </div>
+
+        </div>
 
 
         <form
-    id="booking-form"
-    action="https://formspree.io/f/xeaopdza"
-    method="POST"
->
+            id="booking-form"
+            action="https://formspree.io/f/xeaopdza"
+            method="POST"
+        >
 
             <input
                 type="text"
@@ -639,10 +673,8 @@
                 required
             >
 
-            <select
-                name="size"
-                required
-            >
+
+            <select name="size" required>
 
                 <option value="">
                     Select Dog Size
@@ -670,10 +702,7 @@
             >
 
 
-            <select
-                name="service"
-                required
-            >
+            <select name="service" required>
 
                 <option value="">
                     Select Service
@@ -689,6 +718,10 @@
 
                 <option>
                     Nail Care
+                </option>
+
+                <option>
+                    Ear Cleaning
                 </option>
 
                 <option>
@@ -720,6 +753,17 @@
             </button>
 
         </form>
+
+
+        <div class="booking-call">
+
+            <p>Prefer to talk directly?</p>
+
+            <a href="tel:2248009820">
+                📱 Call or Text (224) 800-9820
+            </a>
+
+        </div>
 
     </div>
 

@@ -992,4 +992,201 @@ footer p {
     .service-card {
         padding: 28px 22px;
     }
+}/* Premium Booking Section */
+#book {
+    padding: 80px 7%;
+    background: #050505;
+}
+
+.booking-heading {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.booking-heading .eyebrow {
+    color: #D4AF37;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.booking-heading h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 44px);
+    margin-bottom: 18px;
+}
+
+.booking-heading > p:last-child {
+    color: #bdbdbd;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.booking-box {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #121212, #070707);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* Deposit Notice */
+.deposit-notice {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.deposit-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.deposit-notice h3 {
+    color: #D4AF37;
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+.deposit-notice p {
+    color: #c8c8c8;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Booking Steps */
+.booking-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.booking-info div {
+    padding: 18px;
+    text-align: center;
+    border-radius: 12px;
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.booking-info strong {
+    display: block;
+    color: #D4AF37;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
+.booking-info span {
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Booking Form */
+#booking-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+#booking-form input,
+#booking-form select,
+#booking-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    border-radius: 10px;
+    border: 1px solid #292929;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+#booking-form input:focus,
+#booking-form select:focus,
+#booking-form textarea:focus {
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.08);
+}
+
+#booking-form textarea {
+    min-height: 130px;
+    resize: vertical;
+    grid-column: 1 / -1;
+}
+
+#booking-form button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    min-width: 240px;
+}
+
+/* Call / Text */
+.booking-call {
+    text-align: center;
+    margin-top: 28px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.booking-call p {
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.booking-call a {
+    color: #D4AF37;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.booking-call a:hover {
+    text-decoration: underline;
+}
+
+/* Booking Mobile */
+@media (max-width: 700px) {
+
+    #book {
+        padding: 60px 6%;
+    }
+
+    .booking-box {
+        padding: 22px;
+    }
+
+    .deposit-notice {
+        align-items: flex-start;
+    }
+
+    .booking-info {
+        grid-template-columns: 1fr;
+    }
+
+    #booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    #booking-form textarea,
+    #booking-form button {
+        grid-column: 1;
+    }
+
+    #booking-form button {
+        width: 100%;
+    }
 }
