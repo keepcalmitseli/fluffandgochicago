@@ -3,21 +3,35 @@
    WEBSITE JAVASCRIPT
    ========================================================= */
 
-// FAQ ACCORDION
+// FAQ ACCORDION — ACCESSIBLE LUXURY DROPDOWNS
+
 const faqQuestions = document.querySelectorAll(".faq-question");
 
 faqQuestions.forEach(function (question) {
 
     question.addEventListener("click", function () {
 
-        const item = question.parentElement;
-        const isOpen = item.classList.contains("active");
+        const item = question.closest(".faq-item");
+        const answer = item.querySelector(".faq-answer");
 
+        const isOpen = question.getAttribute("aria-expanded") === "true";
+
+        // Close all FAQ items
         document.querySelectorAll(".faq-item").forEach(function (faq) {
 
             faq.classList.remove("active");
 
+            const faqQuestion = faq.querySelector(".faq-question");
+            const faqAnswer = faq.querySelector(".faq-answer");
             const symbol = faq.querySelector(".faq-symbol");
+
+            if (faqQuestion) {
+                faqQuestion.setAttribute("aria-expanded", "false");
+            }
+
+            if (faqAnswer) {
+                faqAnswer.hidden = true;
+            }
 
             if (symbol) {
                 symbol.textContent = "+";
@@ -25,9 +39,16 @@ faqQuestions.forEach(function (question) {
 
         });
 
+        // Open the selected item if it was previously closed
         if (!isOpen) {
 
             item.classList.add("active");
+
+            question.setAttribute("aria-expanded", "true");
+
+            if (answer) {
+                answer.hidden = false;
+            }
 
             const symbol = question.querySelector(".faq-symbol");
 
