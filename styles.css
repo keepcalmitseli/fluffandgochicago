@@ -1189,4 +1189,119 @@ footer p {
     #booking-form button {
         width: 100%;
     }
+}/* =========================================
+   PREMIUM ABOUT SECTION
+   ========================================= */
+
+#about {
+    padding: 85px 7%;
+    background: linear-gradient(135deg, #0b0b0b, #141414, #050505);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content .eyebrow {
+    color: #D4AF37;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.about-content h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.about-intro {
+    color: #D4AF37;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.about-content > p:not(.eyebrow):not(.about-intro) {
+    color: #c7c7c7;
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0 auto 18px;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 35px 0;
+}
+
+.about-highlight {
+    padding: 23px 15px;
+    background: linear-gradient(145deg, #171717, #090909);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 14px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.about-highlight:hover {
+    transform: translateY(-4px);
+    border-color: #D4AF37;
+}
+
+.about-highlight span {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.about-highlight p {
+    color: #D4AF37;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.about-content > .button {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* About Section — Mobile */
+@media (max-width: 600px) {
+    #about {
+        padding: 60px 6%;
+    }
+
+    .about-intro {
+        font-size: 16px;
+    }
+
+    .about-content > p:not(.eyebrow):not(.about-intro) {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 28px 0;
+    }
+
+    .about-highlight {
+        padding: 20px 15px;
+    }
 }
