@@ -1633,3 +1633,155 @@ footer p {
         padding: 24px 16px;
     }
 }
+/* =========================================
+   PREMIUM CONTACT SECTION
+   ========================================= */
+
+#contact {
+    padding: 80px 7%;
+    background: linear-gradient(145deg, #080808, #121212, #050505);
+}
+
+.contact-box {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px 40px;
+    text-align: center;
+    background: linear-gradient(145deg, #151515, #090909);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+.contact-box .eyebrow {
+    color: #D4AF37;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.contact-box h2 {
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #c7c7c7;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Contact Details */
+
+.contact-service-area,
+.contact-phone {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    max-width: 600px;
+    margin: 18px auto;
+    padding: 22px;
+    text-align: left;
+    background: #0b0b0b;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    border-radius: 14px;
+}
+
+.contact-detail-icon {
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+.contact-service-area h3,
+.contact-phone h3 {
+    color: #D4AF37;
+    font-size: 17px;
+    margin: 0 0 8px;
+}
+
+.contact-service-area p {
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.contact-phone a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-phone a:hover {
+    color: #D4AF37;
+}
+
+/* Contact Buttons */
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact-actions .button {
+    min-width: 190px;
+    box-sizing: border-box;
+}
+
+.contact-note {
+    color: #999999;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 24px 0 0;
+}
+
+/* Contact Mobile */
+
+@media (max-width: 600px) {
+    #contact {
+        padding: 55px 6%;
+    }
+
+    .contact-box {
+        padding: 30px 18px;
+        border-radius: 16px;
+    }
+
+    .contact-intro {
+        font-size: 15px;
+    }
+
+    .contact-service-area,
+    .contact-phone {
+        gap: 12px;
+        padding: 17px 14px;
+    }
+
+    .contact-service-area h3,
+    .contact-phone h3 {
+        font-size: 15px;
+    }
+
+    .contact-phone a {
+        font-size: 18px;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .contact-actions .button {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
